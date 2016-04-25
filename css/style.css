@@ -15,6 +15,8 @@ ul {
 a {
     color: #4C4C4C;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 a:hover {
@@ -59,7 +61,7 @@ h6 {
 
 p {
     margin: 0 0 10px;
-    font-family: "微软雅黑","黑体","新宋体","Arial Unicode MS";
+    font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS";
 }
 
 .wrap {
@@ -120,7 +122,6 @@ p {
     margin-left: 25px;
     display: inline-block;
     cursor: pointer;
-
 }
 
 .nav a {
@@ -135,7 +136,6 @@ p {
 
 .nav .active {
     border-bottom: 2px solid #2fb789;
-
 }
 
 
@@ -169,7 +169,7 @@ p {
     left: 0;
     opacity: 0;
     filter: Alpha(opacity=0);
-    /* IE8 以及更早的浏览器 */   
+    /* IE8 以及更早的浏览器 */
 }
 
 .banner .imgs li.on {
@@ -183,7 +183,7 @@ p {
     float: left;
 }
 
- .banner .btn {
+.banner .btn {
     display: block;
     height: 75px;
     background: rgba(3, 3, 3, 0.3);
@@ -197,7 +197,7 @@ p {
     z-index: 100;
     filter: Alpha(opacity=0);
     /*IE8 以及更早的浏览器*/
-        -webkit-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
     /*Safari and Chrome*/
     -moz-transition: all 0.6s ease;
     /*Firefox*/
@@ -207,10 +207,7 @@ p {
     /*Opera*/
     transition: all 0.6s ease;
 }
- 
 
-
- 
 .banner:hover .btn {
     opacity: 1;
     filter: Alpha(opacity=100);
@@ -225,7 +222,7 @@ p {
     right: 20px;
 }
 
-.banner_c img{
+.banner_c img {
     width: 100%;
 }
 
@@ -233,6 +230,30 @@ p {
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------section------------------------------- 
 /* ---------------------------------------------------------------------------- */
+
+.mulConList {
+    padding: 40px 0 40px;
+    text-align: center;
+}
+
+.inner-container {
+    height: auto;
+}
+
+.inner-container img {
+    width: 95px;
+    height: 95px;
+}
+
+.inner-container h3 {
+    font-size: 18px;
+    color: #666;
+    font-family: "微软雅黑", "宋体";
+}
+
+.inner-container p {
+    margin: 0;
+}
 
 .row {
     margin: 10px 0 10px;
@@ -276,9 +297,7 @@ p {
 }
 
 .BorderLine:after,
-.BorderLine:before,
-.BorderLine_b:after,
-.BorderLine_b:before {
+.BorderLine_b:after {
     clear: both;
     content: '\0020';
     display: block;
@@ -321,6 +340,7 @@ p {
 }
 
 .TableTile {
+    width: 100%;
     height: 30px;
     line-height: 30px;
     vertical-align: bottom;
@@ -340,10 +360,13 @@ p {
 .service img {
     margin-right: 10px;
 }
+
+
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------section-about-------------------------- 
 /* ---------------------------------------------------------------------------- */
-.tabBtn{
+
+.tabBtn {
     height: 45px;
     width: 100%;
     line-height: 45px;
@@ -353,28 +376,34 @@ p {
     background: #fff;
 }
 
-.tabBtn span{
+.tabBtn span {
     color: #333;
     font-size: 12px;
-    sfont-family: "微软雅黑","宋体";
+    sfont-family: "微软雅黑", "宋体";
     cursor: default;
 }
 
-.tabTable .on{
-    background: #33BF8E;  
+.tabTable .on {
+    background: #33BF8E;
 }
-.tabTable .on span{
+
+.tabTable .on span {
     color: #fff;
 }
-.article{
+
+.article {
     height: 270px;
 }
-.article article{
+
+.article article {
     display: none;
 }
-.article article.on{
+
+.article article.on {
     display: block;
 }
+
+
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------content------------------------------- 
 /* ---------------------------------------------------------------------------- */
@@ -414,18 +443,20 @@ p {
     cursor: pointer;
     text-align: right;
 }
-.advs{
+
+.advs {
     margin-top: 10px;
 }
-.advs img{
+
+.advs img {
     width: 139px;
     height: 145px;
     vertical-align: top;
-        margin-right: 10px;
+    margin-right: 10px;
     float: left;
-
 }
-.advsContent{
+
+.advsContent {
     line-height: 1.8;
     padding: 0;
     white-space: normal;
@@ -436,21 +467,24 @@ p {
     text-align: left;
     display: inline;
 }
-.advsContent p{
+
+.advsContent p {
     margin: 0;
     font-size: 12px;
 }
-.advsContent span{
+
+.advsContent span {
     font-size: 16px;
     line-height: 1.5em;
 }
-.advs img{
+
+.advs img {
     width: 139px;
     height: 145px;
     vertical-align: top;
     float: left;
-
 }
+
 
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------footer------------------------------- 
