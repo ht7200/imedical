@@ -11,51 +11,84 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+  ================================================== -->
 </head>
-    <body>
-        <header>
-            <div class="TopTable"></div>
-            <div class="WebHeader">
-                <div class="HeadRow">
-                    <div class="logo">
-                        <img src="res/logo1.png" alt="logo">
-                    </div>
-                    <div class="nav">
-                        <ul>
-                        <a href="index.html"><li>首页</li></a>
-                        <a href="example.html"><li>成功案例</li></a>
-                        <a href="news.html"><li class="active">新闻动态</li></a>
-                        <a href="about.html"><li>关于我们</li></a>
-                        <a href="contact.html"><li>联系我们</li></a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="banner_c">
-                <img src="res/banner/contact.jpg" alt="contact">
-            </div>
-        </header>
-        <section>
-        </section>
-        <footer>
-            <div class="wrap clearfix">
-                <div class="Lfoot">
+</head>
+
+<body>
+    <header>
+        <div class="TopTable"></div>
+        <div class="WebHeader">
+            <div class="HeadRow">
+                <div class="logo">
                     <img src="res/logo1.png" alt="logo">
-                    <br>
-                    <p>©2006-2016 上海梅叶医疗科技有限公司版权所有</p>
                 </div>
-                <div class="Rfoot">
+                <div class="nav">
                     <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">成功案例</a></li>
-                        <li><a href="#">新闻动态</a></li>
-                        <li><a href="#">关于我们</a></li>
-                        <li><a href="#">联系我们</a></li>
-                        <li class="lastLi"><a href="">留言板</a></li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="example.html">成功案例</a></li>
+                        <li class="active"><a href="news.html">新闻动态</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
+                <!-- 移动显示开始 -->
+                <div class="sideNav">
+                    <div class="navBtn">
+                        <a href="index.html"><span>首页</span></a>
+                    </div>
+                    <div class="navBtn">
+                        <a href="example.html"><span>成功案例</span></a>
+                    </div>
+                    <div class="navBtn on">
+                        <a href="news.html"><span>新闻动态</span></a>
+                    </div>
+                    <div class="navBtn">
+                        <a href="about.html"><span>关于我们</span></a>
+                    </div>
+                    <div class="navBtn">
+                        <a href="contact.html"><span>联系我们</span></a>
+                    </div>
+                    <div class="navBtn"></div>
+                    <div class="navBtn on return">
+                        <img src="res/return.png">
+                    </div>
+                </div>
+                <div class="menu">
+                    <img src="res/menu.png" alt="menu">
+                </div>
+                <!-- 移动显示结束 -->
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="banner_c">
+            <img src="res/banner/contact.jpg" alt="contact">
+        </div>
+    </header>
+    <section>
+    </section>
+    <footer>
+        <div class="wrap clearfix">
+            <div class="Lfoot">
+                <img src="res/logo1.png" alt="logo">
+                <br>
+                <p>©2006-2016 上海梅叶医疗科技有限公司版权所有</p>
+            </div>
+            <div class="Rfoot">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">成功案例</a></li>
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li class="lastLi"><a href="">留言板</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>

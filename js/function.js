@@ -76,6 +76,31 @@ $(document).ready(function() {
     }
 
 
+
+    /******************响应式侧边栏*************************/
+ 
+    $(".menu").click(function(){
+       $(".sideNav").show();
+    })
+
+
+    $(".return").click(function(){
+       $(".sideNav").hide();
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /******************文章切换*************************/
     $(".tabTable .tabBtn").first().addClass("on");
 

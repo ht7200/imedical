@@ -17,6 +17,7 @@ a {
     text-decoration: none;
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 a:hover {
@@ -137,7 +138,60 @@ p {
 .nav .active {
     border-bottom: 2px solid #2fb789;
 }
+.menu {
+    webkit-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    border-radius: .3rem;
+    width: 45px;
+    height: 45px;
+    background: #00bb9c;
+    position: fixed;
+    bottom: 180px;
+    right: 15px;
+    z-index: 10;
+    display: none;
+}
 
+.menu img {
+    width: 80%;
+    margin: 3px;
+}
+
+.sideNav {
+    margin-top: 55px;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    background: #D1ECE7;
+    display: none;
+    z-index: 20;
+    border-left: 3px solid #D1ECE7;
+}
+
+.sideNav .navBtn {
+    height: 55px;
+    width: 100%;
+    z-index: 20;
+}
+
+.navBtn img {
+    width: 40px;
+    padding-left: 2.5rem;
+}
+
+.navBtn.on {
+    background: #fff;
+}
+
+.navBtn a {
+    line-height: 55px;
+    color: #666;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+}
 
 /* ---------------------------------------------------------------------------- 
 /* -------------------------------------banner--------------------------------- 
@@ -392,7 +446,7 @@ p {
 }
 
 .article {
-    height: 270px;
+    min-height: 270px;
 }
 
 .article article {
@@ -530,4 +584,26 @@ a {
 .Rfoot a {
     margin: 0;
     padding: 0;
+}
+/* ---------------------------------------------------------------------------- 
+/* ----------------------------responsive design------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    .wrap {
+        width: 100%;
+    }
+    .HeadRow {
+        width: 100%;
+    }
+    
+    .banner,
+    .TopTable,
+    .nav,
+    .Rfoot {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
 }
