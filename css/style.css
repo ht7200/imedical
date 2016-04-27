@@ -174,6 +174,7 @@ p {
 
 .sideNav .navBtn {
     height: 55px;
+    line-height: 50px;
     width: 100%;
     z-index: 20;
 }
@@ -181,6 +182,7 @@ p {
 .navBtn img {
     width: 40px;
     padding-left: 2.5rem;
+    vertical-align: middle;
 }
 
 .navBtn.on {
@@ -432,7 +434,8 @@ p {
     border-right: 1px solid #d7d7d7;
     border-bottom: 1px solid #d7d7d7;
     text-align: center;
-    background: #fff;
+    background-color: #fff;
+
 }
 
 .tabBtn span {
@@ -443,7 +446,7 @@ p {
 }
 
 .tabTable .on {
-    background: #33BF8E;
+    background-color: #33BF8E;
 }
 
 .tabTable .on span {
@@ -490,6 +493,18 @@ p {
 
 .newsTable td {
     vertical-align: top;
+}
+
+.newsTable a{
+    font-family: 微软雅黑;
+    font-size: 15px;
+    font-weight: normal;
+    color: #6d6d6d;
+    text-overflow: ellipsis;
+}
+
+.newsTable:hover a{
+    color: #00bb9c;
 }
 
 .newsTitle {
