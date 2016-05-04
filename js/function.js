@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     /******************QQ客服*************************/
 
 
@@ -18,24 +19,17 @@ $(document).ready(function() {
     var inter //图片滚动定时器
     var size = $(".banner .imgs li").size();
     $(".banner .imgs li").first().addClass("on");
-  
-  	 bannerPlay();//轮播开始
+
+    bannerPlay(); //轮播开始
 
     /*自动轮播*/
     function bannerPlay() {
-      inter = setInterval(function() {
+        inter = setInterval(function() {
             i++;
             move()
         }, 5000);
     }
 
-   /*自动轮播*/
-
-        // inter = setInterval(function() {
-        //     i++;
-        //     move()
-        // }, 5000);
-  
 
     /*向左的按钮*/
     $(".banner .btn_l").click(function() {
@@ -62,42 +56,26 @@ $(document).ready(function() {
         if (i == size) {
             i = 0;
             $(".banner  .imgs li").eq(i).animate({ opacity: 1 }, 1000).siblings().animate({ opacity: 0 }, 1500);
-        //    $(".banner  .imgs li").eq(i).addClass("on").siblings().removeClass("on");
         } else if (i == -1) {
             i = size;
-             $(".banner  .imgs li").eq(i).animate({ opacity: 1 }, 1000).siblings().animate({ opacity: 0 }, 1500);
-        //    $(".banner .imgs li").eq(i).addClass("on").siblings().removeClass("on");
-    
+            $(".banner  .imgs li").eq(i).animate({ opacity: 1 }, 1000).siblings().animate({ opacity: 0 }, 1500);
         } else {
-        	 $(".banner  .imgs li").eq(i).animate({ opacity: 1 }, 1000).siblings().animate({ opacity: 0 }, 1500);
-        //    $(".banner .imgs li").eq(i).addClass("on").siblings().removeClass("on");
+            $(".banner  .imgs li").eq(i).animate({ opacity: 1 }, 1000).siblings().animate({ opacity: 0 }, 1500);
         }
-        //	$(".banner .imgs").stop().animate({left:-i*liLenth},600)	
     }
 
 
 
     /******************响应式侧边栏*************************/
- 
-    $(".menu").click(function(){
-       $(".sideNav").show();
+
+    $(".menu").click(function() {
+        $(".sideNav").show();
     })
 
 
-    $(".return").click(function(){
-       $(".sideNav").hide();
+    $(".return").click(function() {
+        $(".sideNav").hide();
     })
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -110,6 +88,16 @@ $(document).ready(function() {
         var index = $(this).index();
         $(".article article").eq(index).addClass("on").siblings().removeClass("on");
     })
+
+
+    /******************回到顶部*************************/
+ 
+    $('.scrollup').click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
 
 
 })
