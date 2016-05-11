@@ -94,7 +94,7 @@ $(document).ready(function() {
     $(".tabTable_m .tabBtn").first().addClass("on");
 
     $(".tabTable_m .tabBtn").click(function() {
-
+        $("html, body").animate({ scrollTop: 350 }, 1000);
         $(this).addClass("on").siblings().removeClass("on");
         var index = $(this).index();
         $(".article article").eq(index).addClass("on").siblings().removeClass("on");
