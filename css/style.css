@@ -43,7 +43,8 @@ body {
     margin: 0px;
     padding: 0px;
     background: #efefef;
-    color: #666;;
+    color: #666;
+    ;
     font: 14px/22px "Microsoft YaHei", arial, serif;
     font-family: Montserrat, sans-serif;
 }
@@ -72,6 +73,7 @@ p {
     margin: 0 auto;
     text-align: left;
 }
+
 
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------header------------------------------- 
@@ -328,7 +330,8 @@ p {
     font-size: 30px;
     display: inline;
 }
-.title_1 a{
+
+.title_1 a {
     display: inline;
 }
 
@@ -389,15 +392,16 @@ p {
 .table_1 {
     padding: 10px 0 10px 0;
     border-bottom: 1px solid #9c9c9c;
-    margin-right: 20px;   
+    margin-right: 20px;
 }
 
-.table_1 a{
+.table_1 a {
     margin-left: 25px;
-    white-space:nowrap; 
-    overflow:hidden; 
-    -o-text-overflow: ellipsis;    /* Opera 9-10 */  
-    text-overflow:    ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    /* Opera 9-10 */
+    text-overflow: ellipsis;
 }
 
 .TableTile {
@@ -435,7 +439,10 @@ p {
     border-bottom: 1px solid #d7d7d7;
     text-align: center;
     background-color: #fff;
+}
 
+.tabTable_m {
+    display: none;
 }
 
 .tabBtn span {
@@ -453,21 +460,15 @@ p {
     color: #fff;
 }
 
-.article {
-    min-height: 720px;
-}
-
 .article article {
     display: none;
-
 }
 
 .article article.on {
     display: block;
 }
 
-
-.scrollup{
+.scrollup {
     width: 100%;
     height: 1.6rem;
     bottom: 0;
@@ -481,13 +482,13 @@ p {
     display: none;
 }
 
-.readMore{
+.readMore {
     width: 100%;
     bottom: 0;
     height: 1.6rem;
-
 }
-.readMore a{
+
+.readMore a {
     float: right;
     margin-right: 40px;
     width: 80px;
@@ -496,9 +497,11 @@ p {
     font-size: 12px;
 }
 
+
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------content------------------------------- 
 /* ---------------------------------------------------------------------------- */
+
 .content {
     text-align: center;
 }
@@ -512,7 +515,7 @@ p {
     margin: 10px 30px;
 }
 
-.example img{
+.example img {
     width: 100%;
 }
 
@@ -523,15 +526,13 @@ p {
 }
 
 .advs img {
-    width: 145px;
-    height: 145px;
+    width: 40%;
     vertical-align: top;
     margin-right: 10px;
     float: left;
 }
 
 .advsContent {
-
     line-height: 1.8;
     padding: 0;
     white-space: normal;
@@ -553,12 +554,7 @@ p {
     font-family: "微软雅黑", "宋体";
 }
 
-.advs img {
-    width: 200px;
-    height: 200px;
-    vertical-align: top;
-    float: left;
-}
+
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------news------------------------------- 
 /* ---------------------------------------------------------------------------- */
@@ -569,16 +565,23 @@ p {
     border: 1px solid #d7d7d7;
 }
 
-.Nbtn{
-    position: absolute;
-    top: 340px;
-}
-.Nbtn_l{
-    left: 23px;
+.pagenation {
+    margin-top: 5px;
+    cursor: pointer;
 }
 
-.Nbtn_r{
-    right: 20px;
+.pagenation .prev,
+.pagenation .next {
+    width: 45px;
+    display: inline-block;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.pagenation .pagno {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 1px 1px #888888;
 }
 
 
@@ -608,7 +611,7 @@ footer a {
     line-height: 1.8px;
     font-size: 12px;
     font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS";
-    display:inline;
+    display: inline;
 }
 
 .Rfoot {
@@ -652,5 +655,8 @@ footer a {
         display: block;
         opacity: 0.7;
         filter: alpha(opacity=70);
+    }
+    .tabTable_m {
+        display: block;
     }
 }
