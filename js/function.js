@@ -87,8 +87,19 @@ $(document).ready(function() {
         $(this).addClass("on").siblings().removeClass("on");
         var index = $(this).index();
         $(".article article").eq(index).addClass("on").siblings().removeClass("on");
+        $(".tabTable_m div").eq(index).addClass("on").siblings().removeClass("on");
     })
 
+
+    $(".tabTable_m .tabBtn").first().addClass("on");
+
+    $(".tabTable_m .tabBtn").click(function() {
+
+        $(this).addClass("on").siblings().removeClass("on");
+        var index = $(this).index();
+        $(".article article").eq(index).addClass("on").siblings().removeClass("on");
+        $(".tabTable div").eq(index).addClass("on").siblings().removeClass("on");
+    })
 
     /******************回到顶部*************************/
  
