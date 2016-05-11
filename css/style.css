@@ -43,7 +43,7 @@ body {
     margin: 0px;
     padding: 0px;
     background: #efefef;
-    color: #656565;
+    color: #666;;
     font: 14px/22px "Microsoft YaHei", arial, serif;
     font-family: Montserrat, sans-serif;
 }
@@ -72,7 +72,6 @@ p {
     margin: 0 auto;
     text-align: left;
 }
-
 
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------header------------------------------- 
@@ -120,7 +119,7 @@ p {
 .nav li {
     width: 70px;
     height: 35px;
-    margin-left: 25px;
+    margin-left: 10px;
     display: inline-block;
     cursor: pointer;
 }
@@ -296,16 +295,12 @@ p {
 
 .inner-container {
     height: auto;
-}
-
-.inner-container img {
-    width: 95px;
-    height: 95px;
+    margin-top: 70px;
 }
 
 .inner-container h3 {
     font-size: 18px;
-    color: #666;
+    color: #195D51;
     font-family: "微软雅黑", "宋体";
 }
 
@@ -330,7 +325,7 @@ p {
     color: #00bb9c;
     font-family: 微软雅黑;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 30px;
     display: inline;
 }
 .title_1 a{
@@ -375,7 +370,7 @@ p {
 }
 
 .MainLine_b {
-    width: 95px;
+    width: 140px;
     float: left;
     z-index: 10;
     border-bottom: 2px solid #545454;
@@ -391,13 +386,18 @@ p {
     border-top: 2px solid #e6e6e6;
 }
 
-.table_0 {
-    padding: 10px 0 10px 0;
-}
-
 .table_1 {
     padding: 10px 0 10px 0;
-    border-bottom: 1px dashed #9c9c9c;
+    border-bottom: 1px solid #9c9c9c;
+    margin-right: 20px;   
+}
+
+.table_1 a{
+    margin-left: 25px;
+    white-space:nowrap; 
+    overflow:hidden; 
+    -o-text-overflow: ellipsis;    /* Opera 9-10 */  
+    text-overflow:    ellipsis; 
 }
 
 .TableTile {
@@ -466,12 +466,6 @@ p {
     display: block;
 }
 
-.newsConrent{
-    width: 100%;
-    height: 800px;
-    border: 1px solid #d7d7d7;
-    text-overflow: ellipsis;
-}
 
 .scrollup{
     width: 100%;
@@ -496,8 +490,10 @@ p {
 .readMore a{
     float: right;
     margin-right: 40px;
-    width: 60px;
+    width: 80px;
     color: #4C4C4C;
+    line-height: 1.8;
+    font-size: 12px;
 }
 
 /* ---------------------------------------------------------------------------- 
@@ -508,8 +504,7 @@ p {
 }
 
 .content img {
-    width: 300px;
-    height: 225px;
+    width: 100%;
     margin: 5px;
 }
 
@@ -517,50 +512,18 @@ p {
     margin: 10px 30px;
 }
 
-.newsTable {
-    padding: 0;
-}
-
-.newsTable table {
-    width: 100%
-}
-
-.newsTable td {
-    vertical-align: top;
-}
-
-.newsTable a{
-    font-family: 微软雅黑;
-    font-size: 15px;
-    font-weight: normal;
-    color: #6d6d6d;
-    text-overflow: ellipsis;
-}
-
-.newsTable:hover a{
-    color: #00bb9c;
-}
-
-.newsTitle {
-    height: 23px;
-    line-height: 23px;
-    cursor: pointer;
-}
-
-.newsCalendar {
-    height: 23px;
-    line-height: 23px;
-    width: 89px;
-    cursor: pointer;
-    text-align: right;
+.example img{
+    width: 100%;
 }
 
 .advs {
     margin-top: 10px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .advs img {
-    width: 139px;
+    width: 145px;
     height: 145px;
     vertical-align: top;
     margin-right: 10px;
@@ -568,12 +531,12 @@ p {
 }
 
 .advsContent {
+
     line-height: 1.8;
     padding: 0;
     white-space: normal;
     word-wrap: break-word;
     word-break: normal;
-    overflow: hidden;
     width: 100%;
     text-align: left;
     display: inline;
@@ -581,19 +544,41 @@ p {
 
 .advsContent p {
     margin: 0;
-    font-size: 12px;
+    font-size: 13px;
 }
 
-.advsContent span {
-    font-size: 16px;
-    line-height: 1.5em;
+.advsContent h3 {
+    font-size: 18px;
+    color: #195D51;
+    font-family: "微软雅黑", "宋体";
 }
 
 .advs img {
-    width: 139px;
-    height: 145px;
+    width: 200px;
+    height: 200px;
     vertical-align: top;
     float: left;
+}
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------news------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.newsConrent {
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid #d7d7d7;
+}
+
+.Nbtn{
+    position: absolute;
+    top: 340px;
+}
+.Nbtn_l{
+    left: 23px;
+}
+
+.Nbtn_r{
+    right: 20px;
 }
 
 
@@ -618,11 +603,12 @@ footer {
 }
 
 footer p,
-a {
+footer a {
     color: #AEAEAE;
-    line-height: 1.8;
+    line-height: 1.8px;
     font-size: 12px;
-    font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS"
+    font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS";
+    display:inline;
 }
 
 .Rfoot {
