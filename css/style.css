@@ -730,4 +730,7 @@ footer a {
     .tabTable_m {
         display: block;
     }
+    .pro-container {
+    margin: 0px 20px;
+}
 }
