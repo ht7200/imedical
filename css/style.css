@@ -512,6 +512,7 @@ p {
     border-bottom: 1px solid #d7d7d7;
     text-align: center;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .tabTable_m {
@@ -522,7 +523,6 @@ p {
     color: #333;
     font-size: 12px;
     sfont-family: "微软雅黑", "宋体";
-    cursor: default;
 }
 
 .tabTable .on {
