@@ -111,6 +111,7 @@ p {
     float: right;
     text-align: center;
     display: inline-block;
+    
 }
 
 .nav ul {
@@ -118,8 +119,8 @@ p {
     padding: 0;
 }
 
-.nav li {
-    width: 70px;
+.nav > ul > li {
+    width: 80px;
     height: 35px;
     margin-left: 10px;
     display: inline-block;
@@ -132,13 +133,61 @@ p {
     font-family: 微软雅黑, 宋体;
 }
 
-.nav li:hover {
+.nav > ul > li:hover {
     border-bottom: 2px solid #2fb789;
 }
 
 .nav .active {
     border-bottom: 2px solid #2fb789;
 }
+.nav b{
+    margin-top: 9px;
+    margin-left: 8px;
+    float: right;
+    display: inline-block;
+    line-height: 35px;
+    font-weight: bold;
+    border-left: 4px solid transparent; 
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333; 
+    /*border-bottom-color: #333;*/
+}
+   
+.down-con{
+    position: absolute;
+    margin-top: 1px;
+    padding-left: 20px;
+    width: 400px;
+    z-index: 99;
+    background: #fff;
+    border-top: 1px solid #9c9c9c;
+    display: none;
+}
+
+.pdtLi:hover .down-con{
+    display: block;
+}
+
+.down-con ul{
+    list-style-type: circle;
+}
+
+.down-con a{
+    color: #337ab7;
+    font-size: 14px;
+}
+
+.down-con a:hover {
+    color: #FA3E04;
+}  
+
+.down-con >ul > li{
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+} 
+
+
 
 .menu {
     webkit-border-radius: .3rem;
@@ -461,6 +510,7 @@ p {
 }
 
 .article article {
+    min-height: 600px;
     display: none;
 }
 
@@ -576,6 +626,12 @@ p {
     width: 45px;
     display: inline-block;
     box-shadow: 1px 1px 1px #888888;
+}
+
+.pagenation .prev:active,
+.pagenation .next:active,
+.pagenation .pagno:active {
+    box-shadow: 1px 1px 1px #888888 inset;
 }
 
 .pagenation .pagno {
