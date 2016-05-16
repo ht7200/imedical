@@ -87,28 +87,31 @@ $(document).ready(function() {
         $(this).addClass("on").siblings().removeClass("on");
         var index = $(this).index();
         $(".article article").eq(index).addClass("on").siblings().removeClass("on");
-        $(".tabTable_m div").eq(index).addClass("on").siblings().removeClass("on");
     })
 
-
-    $(".tabTable_m .tabBtn").first().addClass("on");
-
-    $(".tabTable_m .tabBtn").click(function() {
-        $("html, body").animate({ scrollTop: 350 }, 1000);
-        $(this).addClass("on").siblings().removeClass("on");
-        var index = $(this).index();
-        $(".article article").eq(index).addClass("on").siblings().removeClass("on");
-        $(".tabTable div").eq(index).addClass("on").siblings().removeClass("on");
-    })
 
     /******************回到顶部*************************/
- 
-    $('.scrollup').click(function() {
+
+    $('.to-top').click(function() {
         $("html, body").animate({
             scrollTop: 0
         }, 1000);
         return false;
     });
 
+
+    //scroll to top
+    $('.to-top').hide();  
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 120) {
+            $('.to-top').fadeIn();
+        } else {
+            $('.to-top').fadeOut();
+        }
+    });
+    $('.to-top').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
 
 })
